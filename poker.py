@@ -16,7 +16,7 @@ class Card():
 
 
 def generate_suit(card):
-    suit = random.randint(1,4)
+    suit = random.randint(1, 4)
     card.suit_number = suit
     if suit == 1:
         card.suit = 'of Clubs'
@@ -29,7 +29,7 @@ def generate_suit(card):
 
 
 def generate_rank(card):
-    rank = random.randint(2,14)
+    rank = random.randint(2, 14)
     card.rank_number = rank
     if rank >= 2 and rank <= 10:
         card.rank = str(rank) + ' '
@@ -48,7 +48,7 @@ def generate_name(card):
 
 
 def generate_card():
-    card=Card()
+    card = Card()
     generate_suit(card)
     generate_rank(card)
     generate_name(card)
